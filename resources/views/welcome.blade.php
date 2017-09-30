@@ -4,7 +4,7 @@
 <title>dotiU</title>
 
 <div class="container" id="container-right">
-  <h1 id=titulo >dotiU desde el nav</h1>
+  <h1 id=titulo >dotiU desde el nav me cago en la puta con eso</h1>
   <div class="row">
 
     <div class="col-lg-8">
