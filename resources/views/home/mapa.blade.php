@@ -2,98 +2,65 @@
 @section('content')
 
 
-	<html>
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <title>Complex icons</title>
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-				margin-top: 1%;
-				margin-bottom: 1%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
+<?php
 
-      // The following example creates complex markers to indicate beaches near
-      // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
-      // to the base of the flagpole.
 
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: {lat: 10.0000000, lng: -84.0000000}
-        });
 
-        setMarkers(map);
-      }
+?>
 
-      // Data for the markers consisting of a name, a LatLng and a zIndex for the
-      // order in which these markers should display on top of each other.
-      var beaches = [
-        ['Bondi Beach', -33.890542, 151.274856, 4],
-        ['Coogee Beach', -33.923036, 151.259052, 5],
-        ['Cronulla Beach', -34.028249, 151.157507, 3],
-        ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-        ['Maroubra Beach', -33.950198, 151.259302, 1]
-      ];
+php
 
-      function setMarkers(map) {
-        // Adds markers to the map.
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mapa</title>
+<script src="http://maps.google.com/maps?file=api&v=3&key=ABQIAAAAp9wVclPicp2HGB4QNX-LLRTqx4D3bS478d-1w1nVZmw5mBzr_hTd8Hb4lXsLPv7hW7mRH6_tkUmJ3g" type="text/javascript"></script>
+<script type="text/javascript">
 
-        // Marker sizes are expressed as a Size of X,Y where the origin of the image
-        // (0,0) is located in the top left of the image.
+var map      = null;
+var geocoder = null;
 
-        // Origins, anchor positions and coordinates of the marker increase in the X
-        // direction to the right and in the Y direction down.
-        var image = {
-          url: 'img/favicon.png',
-          // This marker is 20 pixels wide by 32 pixels high.
-          size: new google.maps.Size(20, 32),
-          // The origin for this image is (0, 0).
-          origin: new google.maps.Point(0, 0),
-          // The anchor for this image is the base of the flagpole at (0, 32).
-          anchor: new google.maps.Point(0, 32)
-        };
-        // Shapes define the clickable region of the icon. The type defines an HTML
-        // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-        // The final coordinate closes the poly by connecting to the first coordinate.
-        var shape = {
-          coords: [1, 1, 1, 20, 18, 20, 18, 1],
-          type: 'poly'
-        };
-        for (var i = 0; i < beaches.length; i++) {
-          var beach = beaches[i];
-          var marker = new google.maps.Marker({
-            position: {lat: beach[1], lng: beach[2]},
-            map: map,
-            icon: image,
-            shape: shape,
-            title: beach[0],
-            zIndex: beach[3]
-          });
-        }
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-    </script>
-  </body>
+function load() {
+
+var coordenada1= "<?php echo $coordenada1; ?>";
+var coordenada2= "<?php echo $coordenada2; ?>";
+
+
+ map = new GMap2(document.getElementById("map"));
+ map.setCenter(new GLatLng(coordenada1,coordenada2), 15);
+ map.addControl(new GSmallMapControl());
+ map.addControl(new GMapTypeControl());
+ geocoder = new GClientGeocoder();
+		 }
+ function showAddress(address, zoom) {
+
+if (geocoder) {
+					geocoder.getLatLng(address,
+						 function(point) {
+							 if (!point) {
+								alert(address + " not found");
+							 } else {
+								map.setCenter(point, zoom);
+								var marker = new GMarker(point);
+								map.addOverlay(marker);
+								document.form_mapa.coordenadas1.value = point.y;
+								document.form_mapa.coordenadas2.value = point.x;
+									}
+
+								}
+
+				 );
+
+			 }}
+</script>
+</head>
+
+<body onLoad="load();"  onunload="GUnload();">
+<center>
+<div align="center" id="map" style="height: 425px; width: 425px;">
+</div>
+</center>
+</body>
 </html>
-
-
-
 
 @stop
