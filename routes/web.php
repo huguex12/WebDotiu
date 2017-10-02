@@ -43,10 +43,7 @@ Route::get('perfil', function () {
         return View::make('home/perfil');
 });
 
-Route::get('user/{id}',[
-'as' => 'perfil-detail',
-'uses' =>'UserController@show'
-]);
+
 
 Route::get('acoso', function () {
         return View::make('home/acoso');

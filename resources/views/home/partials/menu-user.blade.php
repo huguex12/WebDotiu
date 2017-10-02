@@ -5,7 +5,7 @@
 		</a>
 
 		<ul class="dropdown-menu" role="menu" id="children">
-			<li><a href="{{route('perfil-detail', user()->id)}}">Ver Perfil</a></li>
+			<li><a href="perfil">Ver Perfil</a></li>
 			<li><a href="{{route('logout')}}">Finalizar sesión</a></li>
 
 		</ul>
