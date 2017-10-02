@@ -19,6 +19,10 @@ Route::bind('mensaje',function($idMensaje){
   return App\Mensaje::where('idMensaje',$idMensaje)->first();
 });
 
+Route::get('foro', [
+    'uses' => 'MensajeController@store'
+  ]);
+
 Route::get('foro','ForoController@index');
 
 Route::get('/', function () {

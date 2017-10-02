@@ -29,8 +29,51 @@
       <a href="#">Leer más</a>
     </div>
 
+    <div class="col-sm-6">
+      <h1>{{$mensaje->titulo}}</h1>
+      <h2>{{$mensaje->fecha}}</h2>
+      <p>{{$mensaje->mensaje}}</p>
+      <a href="#">Leer más</a>
+    </div>
+
   </div>
-      @endforeach
+    @endforeach
+
+
+
+  <div class="page">
+
+
+
+
+
+
+
+
+          <div class="form-group">
+              <label for="name">Titulo:</label>
+
+            <input type="text" name="nombre" class="form-control" placeholder="Titulo....">
+          </div>
+
+          <div class="form-group">
+              <label for="description">Mensaje:</label>
+
+         <input type="text" name="descripcion" class="form-control" placeholder="Mensaje....">
+          </div>
+
+
+          <div class="form-group">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <a href="/admin/producto" class="">Cancelar</a>
+          </div>
+
+
+
+  </div>
+
+
+
 </div>
 
 @stop

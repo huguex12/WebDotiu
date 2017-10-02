@@ -59,13 +59,12 @@ extends('home.template')
           <div class="galeria">
               <h2>Videos</h2>
           </div>
-            <img src="img/img-acoso.jpeg" class="img-responsive">
-            <p>Campaña contra el acosos callejero</p>
-            <img src="img/img-acoso2.jpeg" class="img-responsive">
-            <p>Campaña contra el acosos callejero</p>
-            <img src="img/img-acoso3.jpeg" class="img-responsive">
-            <p>Campaña contra el acosos callejero</p>
+          <div class="video-responsive">
+          <iframe src="https://www.youtube.com/embed/oOaCp59JDkU" frameborder="0" allowfullscreen></iframe>
           </div>
+            <p>Campaña contra el acosos callejero</p>
+
+
 
       </div>
     </section>
