@@ -1077,3 +1077,28 @@ h2,h3,h4,h5,h6
 {
     font-size:25px;
 }
+
+/***************** galeria */
+.galeria{
+border-radius: 50px 10px;
+background-color: #28c9be;
+-webkit-box-shadow: 0 10px 6px -6px #777;
+-moz-box-shadow: 0 10px 6px -6px #777;
+box-shadow: 0 10px 6px -6px #777;
+}
+.galeria h2{
+  font-size: 3em;
+  margin-left: 4%;
+  color: #fff;
+  font-family: "Source Sans Pro";
+}
+.descripcion p{
+  font-size: 17px;
+  text-align: center;
+  font-family: "Source Sans Pro";
+}
+.v-descripcion p{
+  font-size: 20px;
+  text-align: center;
+  font-family: "Source Sans Pro";
+}
