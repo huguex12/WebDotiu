@@ -1,7 +1,6 @@
 @extends('home.template')
-
 @section('content')
-
+@if(Auth::check())
 <div class="container text-center">
 
 
@@ -12,7 +11,7 @@
 
 <div class="col-md-6">
   <div class="product-block">
-  <img src="/img/fabio.jpg" width="50%" alt="">
+  <img src="{{ Auth::user()->img}}" width="50%" alt="">
 </div>
 </div>
 
@@ -20,15 +19,16 @@
 
 <div class="col-md-6">
   <div class="product-info panel" id='info'>
-  <h1>Nombre: Fabio Diaz</h1> <i class=""> </i>
-  <p>Usuario: fepd15</p> <i class="fa fa-pencil 2x"></i>
-  <p>Direccion: Esparza, Puntarenas</p>
-  <p>Fecha de Ingreso: 15/09/2017</p>
+  <h1>Nombre:{{ Auth::user()->name }} </h1> <i class=""> </i>
+  <p>Usuario:{{ Auth::user()->user }} </p> <i class="fa fa-pencil 2x"></i>
+  <p>Direccion:{{ Auth::user()->addres }} </p>
+  <p>Fecha de Ingreso:{{ Auth::user()->created_at }} </p>
 
 
 
   </div>
 </div>
+@endif
 </div>
 
 
