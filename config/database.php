@@ -2,13 +2,7 @@
 
 return [
 
-  'mysql' => array(
-      'read' => array(
-          'host' => 'fdb15.awardspace.net',
-      ),
-      'write' => array(
-          'host' => 'fdb15.awardspace.net'
-      ),
+
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
@@ -99,7 +93,7 @@ return [
     |
     */
 
-  
+    'migrations' => 'migrations',
 
     /*
     |--------------------------------------------------------------------------
