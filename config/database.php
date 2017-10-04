@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'sqlsrv'),
 
     /*
     |--------------------------------------------------------------------------
@@ -53,7 +53,7 @@ return [
             'collation' => 'latin1_swedish_ci',
             'prefix' => '',
             'strict' => true,
-            'engine' => null,
+            'engine' => MyISAM,
         ],
 
         'pgsql' => [
@@ -78,6 +78,9 @@ return [
             'password' => env('DB_PASSWORD', 'znay1094'),
             'charset' => 'utf8',
             'prefix' => '',
+              'collation' => 'latin1_swedish_ci',
+              'strict' => true,
+              'engine' => MyISAM,
         ],
 
     ],
