@@ -2,10 +2,10 @@
 @section('content')
 
 <title>dotiU</title>
-
+  <img src="img/img-publicidad.jpg" class="img-responsive " alt="" height="25%">
 <div class="container" id="container-right">
   <h1 id=titulo >dotiU</h1>
-  
+
   <div class="row">
 
     <div class="col-lg-8">
@@ -13,10 +13,15 @@
     <P class="info" >DOTIU™ es la primer aplicación de acoso y navegación hecha en Costa Rica. El fin de la aplicación consiste en dar un
         monitoreo real del acoso callejero en las calles, aceras y comunidades a lo largo de Costa Rica.Únete a la aplicación
         y comparte información en tiempo real para disminuir el acoso callejero</P>
+<h2 id='slogan'>Construyendo una convivencia libre de acoso</h2>
+
+<a href="{{'https://play.google.com/store?hl=es'}}"><img src="/img/google.png" alt="" width="25%" class="img-responsive" alt="Imagen responsive" id='stores'></a>
+
     </div>
 
+
     <div class="col-lg-4">
-      <img  src="/img/emulador1.png" alt="" width="35%" class="img-responsive" alt="Imagen responsive">
+      <img  src="/img/emulador1.png" alt="" width="60%" class="img-responsive" alt="Imagen responsive" id='emulador'>
 
     </div>
 
@@ -24,12 +29,7 @@
   </div>
 
 
-      <div class="stores">
 
-          <a href="{{'https://play.google.com/store?hl=es'}}"><img src="/img/google.png" alt="" width="25%" class="img-responsive" alt="Imagen responsive"></a>
-
-
-      </div>
 <span class="col"></span>
 
 
@@ -79,6 +79,25 @@
   </section>
 </div>
 
+<div class="row">
+
+  <div class="col-lg-4">
+      <img src="/img/acoso.png" class="img-responsive" alt="" width="30%" id="imgAcoso" >
+  </div>
+
+
+<div class="col-lg-8">
+  <h2>Qué es acoso callejero?</h2>
+ <p>El acoso sexual callejero es un tipo de violencia particular, tanto física como  verbal, ya que por lo general no implica una relación entre <br>
+    la víctima y su agresor. Esta violencia incluye prácticas como silbidos, comentarios sexualmente explícitos, miradas fijas, masturbación pública, <br>
+     seguimiento, tocamientos (“metida de mano”), exhibicionismo (mostrar los genitales), entre otros, del que son víctima las mujeres cotidianamente <br>
+      en la calle o en el transporte público.</p>
+
+
+      <a href="acoso">Ver más</a>
+</div>
+</section>
+</div>
 
 
 

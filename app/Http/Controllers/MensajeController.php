@@ -25,17 +25,22 @@ class MensajeController extends Controller
         return view('admin/producto/create');
   }
 
-  public function store(Request $request)
-  {
-    $Hoy = date('Y-m-d');
+
+
+public function store(Request $request)
+{
+    $Hoy = getDate();
     $mensajes = new Mensaje;
      $mensajes->titulo=$request->get('titulo');
       $mensajes->mensaje=$request->get('mensaje');
+      $mensajes-> $USER->id;
       $mensajes->fecha=$Hoy;
 
 
 
      $mensajes->save();
+
+  
      return Redirect::to('foro');
   }
 

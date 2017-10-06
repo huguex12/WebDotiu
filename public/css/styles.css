@@ -694,7 +694,8 @@ margin-bottom: 1%;
 }
 #info {
   margin-top: 8%;
-  font-size: 100%
+  font-size: 120%
+  color: black;
 }
 #botonInfo{
   margin-top: 8%;
@@ -729,6 +730,12 @@ margin-bottom: 1%;
 }
 #titulo{
   margin-left: 34%;
+  font-size: 300%;
+  color: #df2900;
+}
+#slogan{
+  text-align: center;
+  color:  #df2900;
 }
 .form-horizontal{
   display: block;
@@ -885,19 +892,25 @@ margin-bottom: 30px;
  font-family: "Source Sans Pro";
 }
 
-.stores{
-  margin-left: 15%;
+#stores{
+  float: inherit;
+  display: block;
+  margin: 0 auto 0 auto;
 }
 
 @media all and (max-width: 480px){
-    .stores{
-        width:100%;
+    #stores{
+        width:60%;
         height:auto;
-        margin-left:10px;
+
         float: inherit;
     }
 }
-
+@media all and (max-width: 480px){
+    #emulador{
+      display: none;
+    }
+}
 
 #boton{
  background-color: #e6e6e6;
