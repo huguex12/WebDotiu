@@ -28,25 +28,7 @@
 
   </div>
 
-
-
 <span class="col"></span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div>
 
