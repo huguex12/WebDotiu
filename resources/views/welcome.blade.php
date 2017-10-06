@@ -7,7 +7,7 @@
 
 
   <div class="row" id='content-home'>
-  <h1 id=titulo >dotiU</h1>
+  <h1 id=titulo >dotiU™</h1>
     <div class="col-lg-8">
 
     <P class="info" >DOTIU™ es la primer aplicación de acoso y navegación hecha en Costa Rica. El fin de la aplicación consiste en dar un
