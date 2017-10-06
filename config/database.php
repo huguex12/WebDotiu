@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'sqlsrv'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'fdb15.awardspace.net'),
+            'host' => env('DB_HOST', '185.176.43.49'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', '2445951_app'),
             'username' => env('DB_USERNAME', '2445951_app'),
