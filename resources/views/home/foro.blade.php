@@ -48,7 +48,6 @@
 
 
 
-  {!! Form::open(['action'=>'MensajeController@store']) !!}
 
           <div class="form-group">
               <label for="name">Titulo:</label>
@@ -69,7 +68,7 @@
           </div>
 
 
-                              {!! Form::close() !!}
+                              
 
   </div>
 

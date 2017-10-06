@@ -11,12 +11,12 @@
 </head>
 
 <body>
-  
+
   <div class="container-fluid">
   <section class="row" id="first-row">
       <h3>¿Qué es el acoso sexual callejero (ASC)?</h3>
-          <div class="col-xs-12 col-sm-4 col-md-4">
-            <img src="/img/acoso-icon.png" id="img-acoso" width="10%" class="img-responsive" alt="Imagen responsive">
+          <div class="col-lg-4">
+            <img src="/img/acoso-icon.png" id='imgAcoso' width="30%" class="img-responsive" alt="Imagen responsive">
           </div>
           <div class="col-xs-12 col-sm-8 col-md-8">
             <p>El ASC se refere a prácticas de connotación sexual que son ejercidas por una persona <br>
@@ -38,15 +38,15 @@
           Generea una respuesta de alerta exagerada en las víctimas. <br><br>
           Efectos negativos en la salud de las víctimas, como dolores de cabeza o problemas gastrointestinales.</p>
       </div>
-      <div class="col-xs-12 col-sm-4 col-md-4">
-        <img src="/img/mujer-icon.png" id="img-mujer" width="10%" class="img-responsive" alt="Imagen responsive">
+      <div class="col-lg-4">
+        <img src="/img/mujer-icon.png"  id='imgAcoso' width="30%" class="img-responsive" alt="Imagen responsive">
       </div>
     </section>
 
     <section class="row" id="third-row">
       <h3>Acoso Sexual Callejero en Costa Rica</h3>
-      <div class="col-xs-12 col-sm-4 col-md-4">
-        <img src="/img/stop-icon.png" id="img-stop" width="10%" class="img-responsive" alt="Imagen responsive">
+      <div class="col-lg-4">
+        <img src="/img/stop-icon.png" id='imgAcoso'  width="30%" class="img-responsive" alt="Imagen responsive">
       </div>
       <div class="col-xs-12 col-sm-8 col-md-8">
         <p>Silbidos, los populares "piropos", expresiones vulgares, besos robados, gestos vulgares <br>
@@ -69,9 +69,3 @@
 </html>
 
  @stop
-
-
-
-
-
-
