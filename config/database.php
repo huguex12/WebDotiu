@@ -47,7 +47,7 @@ return [
             'database' => env('DB_DATABASE', '2445951_app'),
             'username' => env('DB_USERNAME', '2445951_app'),
             'password' => env('DB_PASSWORD', 'znay1094'),
-            'port' => env('DB_PORT', '3306'),
+            'port' => env('DB_PORT', '33060'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'latin1_swedish_ci',
